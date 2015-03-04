@@ -524,7 +524,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>signature &amp; authentication (mac &amp; digital signature)</p>
 </li>
 <li>
-<p>encryption (block &amp; stream ciphers)</p>
+<p>encryption (block, stream ciphers, nonces, salts)</p>
 </li>
 <li>
 <p>key derivation functions (kdf)</p>
@@ -537,16 +537,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_backward_compatibility"><a class="link" href="#_backward_compatibility">2. Backward compatibility.</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Since version 0.3.0, buddy is splitted in four modules for improve modularity
-of the application and allow to people include only wanted parts of buddy
-instead of one monolitic library.</p>
+<p>Since version 0.3.0, buddy is split into four modules for improved modularity
+of the application and to allow people to include only wanted parts of buddy
+instead of one monolithic library.</p>
 </div>
 <div class="paragraph">
-<p>Each module has it own functionality and its own documentation. This document/page
-only serves as introduction to the library and the content of index.</p>
+<p>Each module has its own functionality and its own documentation. This document/page
+only serves as an introduction to the library and the content of index.</p>
 </div>
 <div class="paragraph">
-<p>If you are happy with the monolitic version of buddy, you can emulate them including
+<p>If you are happy with the monolithic version of buddy, you can emulate it by including
 all buddy submodules packages like this:</p>
 </div>
 <div class="listingblock">
@@ -562,7 +562,7 @@ all buddy submodules packages like this:</p>
 module documentation.</p>
 </div>
 <div class="paragraph">
-<p>An other option is including a meta package (that includes all them in one):</p>
+<p>Another option is including a meta package (that includes all them in one):</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -590,7 +590,7 @@ for that version <a href="http://funcool.github.io/buddy/0.2.x/">here</a>
 <div class="sect2">
 <h3 id="_buddy_core"><a class="link" href="#_buddy_core">3.1. buddy-core</a></h3>
 <div class="paragraph">
-<p>Cryptographyc api.</p>
+<p>Cryptographyc API.</p>
 </div>
 <div class="paragraph">
 <p>With that list of features:</p>
@@ -620,6 +620,18 @@ for that version <a href="http://funcool.github.io/buddy/0.2.x/">here</a>
 </li>
 <li>
 <p>nonces and stalts</p>
+</li>
+<li>
+<p>secure hash functions (digest)</p>
+</li>
+<li>
+<p>signature &amp; authentication (mac &amp; digital signature)</p>
+</li>
+<li>
+<p>encryption (block &amp; stream ciphers)</p>
+</li>
+<li>
+<p>key derivation functions (kdf)</p>
 </li>
 </ul>
 </div>
@@ -747,7 +759,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</code></pre
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2015-03-04 19:38:57 CET
+Last updated 2015-03-04 19:51:06 CET
 </div>
 </div>
 </body>
